@@ -163,3 +163,27 @@ hr {
 .text-center {
   text-align: center;
 }
+._Bar-module__Bar__3Yl9K {
+  position: relative;
+  overflow: visible;
+  padding: 8px;
+}
+
+._Bar-module__BarGraphTooltip__kWd-V {
+  font-family: Karla;
+  position: absolute;
+  padding: 6px;
+  font: 12px sans-serif;
+  background-color: #ffffff;
+  border: 0;
+  top: 0;
+  border-radius: 8px;
+  pointer-events: none;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 36%);
+  display: none;
+  position: absolute;
+}
+
+._Bar-module__BarAxis__1Pdui text {
+  fill: red !important;
+}

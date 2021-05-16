@@ -1,12 +1,8 @@
-# react-chartjs-2 examples
-
-Live: [reactchartjs.github.io/react-chartjs-2](https://reactchartjs.github.io/react-chartjs-2/#/)
+# react-d3-js examples
 
 ### Running locally
 
 ```bash
-# clone repo
-https://github.com/reactchartjs/react-chart.js
 
 # install react-chartjs-2 dependencies
 npm install

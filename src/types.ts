@@ -1,1 +1,6 @@
-// eslint-disable-next-line no-unused-vars
+export interface BarGraphProps {
+  width: number;
+  height: number;
+  data: any;
+  barColor: string;
+}

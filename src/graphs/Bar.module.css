@@ -1,0 +1,24 @@
+.Bar {
+  position: relative;
+  overflow: visible;
+  padding: 8px;
+}
+
+.BarGraphTooltip {
+  font-family: Karla;
+  position: absolute;
+  padding: 6px;
+  font: 12px sans-serif;
+  background-color: #ffffff;
+  border: 0;
+  top: 0;
+  border-radius: 8px;
+  pointer-events: none;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 36%);
+  display: none;
+  position: absolute;
+}
+
+.BarAxis text {
+  fill: red !important;
+}

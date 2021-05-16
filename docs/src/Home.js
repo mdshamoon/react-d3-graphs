@@ -18,8 +18,7 @@ const Home = () => (
           href='https://github.com/mdshamoon/eact-d3-graphs'
         >
           Github
-            </a>
-       
+        </a>
       </div>
     </div>
     <hr />
@@ -28,17 +27,11 @@ const Home = () => (
         <h3 className='title'>Bar Charts</h3>
         <ul className='items'>
           <li className='entry'>
-            <Link to='/vertical-bar'>Vertical</Link>
+            <Link to='/horizontal-bar'>Vertical</Link>
           </li>
-         
         </ul>
       </div>
-   
-
-    
     </div>
-  
-   
   </>
 );
 

@@ -1,10 +1,12 @@
 import React from 'react';
+import { Bar } from './graphs/Bar';
+import { BarGraphProps } from './types';
 
+export const BarChart = (props: BarGraphProps) => (
+  <div>
+    <h1>Bar graph</h1>
+    <Bar {...props} />
+  </div>
+);
 
-
-
-
-const Scatter = <div>hey</div>
-
-
-export default Scatter;
+export default BarChart;

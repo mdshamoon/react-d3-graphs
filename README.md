@@ -22,8 +22,3 @@ import { Bar } from 'react-d3-graphs';
 
 <Bar data={...} />
 ```
-
-## Examples
-
-Live: [reactchartjs.github.io/react-d3-graphs](https://reactchartjs.github.io/react-chartjs-2/#/)
-
