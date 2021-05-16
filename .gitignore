@@ -22,6 +22,8 @@ yarn-error.log*
 
 react-app-env.d.ts
 
+docs/src/bar
+
 # testing
 coverage
 

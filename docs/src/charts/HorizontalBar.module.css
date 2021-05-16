@@ -1,0 +1,13 @@
+.Header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.ColorSelector {
+  margin-left: 30px;
+}
+
+.ColorSelector select {
+  margin-bottom: 30px;
+}

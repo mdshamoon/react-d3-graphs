@@ -3,4 +3,5 @@ export interface BarGraphProps {
   height: number;
   data: any;
   barColor: string;
+  bgColor: string;
 }

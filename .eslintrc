@@ -24,6 +24,7 @@
     }
   },
   "rules": {
+    "no-unused-expressions": "off",
     "curly": [2, "multi-line"],
     "quotes": [2, "single", "avoid-escape"],
     "react/display-name": 0,

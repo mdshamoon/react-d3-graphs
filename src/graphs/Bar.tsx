@@ -3,7 +3,13 @@ import * as d3 from 'd3';
 import { BarGraphProps } from '../types';
 import styles from './Bar.module.css';
 
-export const Bar = ({ width, height, data, barColor }: BarGraphProps) => {
+export const Bar = ({
+  width,
+  height,
+  data,
+  barColor,
+  bgColor,
+}: BarGraphProps) => {
   const ref: any = useRef();
   const divRef = useRef(null);
 
@@ -26,28 +32,22 @@ export const Bar = ({ width, height, data, barColor }: BarGraphProps) => {
       .domain([0, maximumY * 1.25])
       .range([height, 0]);
 
-    const yAxis = d3.axisLeft(yScale).ticks(8).tickSize(0);
-    svg
-      .append('g')
-      .attr('class', styles.BarAxis)
-      .call(yAxis)
-      .call(g => g.select('.domain').remove());
-
     selection
       .transition()
       .duration(300)
       .attr('height', (d: any) => (d.value > 0 ? yScale(d.value) : 0))
       .attr('y', (d: any) => height - yScale(d.value));
 
-    svg
+    const gg = svg
       .append('g')
-      .attr('class', 'bar-plot-grid')
+      .attr('class', styles.BarAxis)
       .call(
         d3
           .axisLeft(yScale)
           .ticks(8)
           .tickSize(-width + 10)
       );
+    gg.selectAll('text').attr('fill', barColor);
 
     selection
       .enter()
@@ -60,8 +60,8 @@ export const Bar = ({ width, height, data, barColor }: BarGraphProps) => {
       .on('mouseover', (position, value: any) => {
         div
           .html(`<div className='font-karla'>${value.value.toFixed(1)}</div>`)
-          .style('left', `${position.layerX}px`)
-          .style('top', `${position.layerY - 30}px`);
+          .style('left', `${position.pageX}px`)
+          .style('top', `${position.pageY - 30}px`);
 
         div.transition().duration(200).style('display', 'block');
       })
@@ -77,7 +77,7 @@ export const Bar = ({ width, height, data, barColor }: BarGraphProps) => {
       .append('rect')
       .attr('x', () => 0)
       .attr('y', () => height)
-      .attr('width', '104%')
+      .attr('width', '100%')
       .attr('height', 2)
       .attr('fill', barColor);
 
@@ -92,10 +92,10 @@ export const Bar = ({ width, height, data, barColor }: BarGraphProps) => {
 
   useEffect(() => {
     draw();
-  }, [data]);
+  }, [data, barColor, bgColor]);
 
   return (
-    <div className={styles.Bar}>
+    <div className={styles.Bar} style={{ backgroundColor: bgColor }}>
       <svg ref={ref} />
       <div ref={divRef} className={styles.BarGraphTooltip} />
     </div>

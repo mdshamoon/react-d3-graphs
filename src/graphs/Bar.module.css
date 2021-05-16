@@ -1,7 +1,12 @@
 .Bar {
-  position: relative;
-  overflow: visible;
   padding: 8px;
+  border-radius: 12px;
+}
+
+.Bar svg {
+  padding: 20px;
+  margin-left: 20px;
+  overflow: visible;
 }
 
 .BarGraphTooltip {
@@ -19,6 +24,6 @@
   position: absolute;
 }
 
-.BarAxis text {
-  fill: red !important;
+.BarAxis :global(.domain) {
+  stroke-width: 0px;
 }

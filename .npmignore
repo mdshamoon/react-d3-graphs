@@ -1,8 +1,8 @@
-.storybook
-example
+node_modules
+docs
 src
 .editorconfig
 .eslintignore
 .eslintrc
-.circleci
-stories
+.prettierrc
+
