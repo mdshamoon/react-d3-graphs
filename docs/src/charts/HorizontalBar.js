@@ -62,7 +62,6 @@ const HorizontalBarChart = () => (
         </a>
       </div>
     </div>
-    <Bar data={data} options={options} />
   </>
 );
 

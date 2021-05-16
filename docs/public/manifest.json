@@ -1,6 +1,6 @@
 {
-  "short_name": "react-chartjs-2",
-  "name": "react-chartjs-2 component examples",
+  "short_name": "react-d3.js",
+  "name": "react-d3-graph component examples",
   "icons": [
     {
       "src": "favicon.ico",

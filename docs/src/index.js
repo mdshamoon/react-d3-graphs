@@ -26,21 +26,7 @@ const App = () => (
     <div className='content'>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/vertical-bar' component={VerticalBar} />
-        <Route exact path='/horizontal-bar' component={HorizontalBar} />
-        <Route exact path='/stacked-bar' component={StackedBar} />
-        <Route exact path='/grouped-bar' component={GroupedBar} />
-        <Route exact path='/line' component={Line} />
-        <Route exact path='/multi-axis-line' component={MultiAxisLine} />
-        <Route exact path='/scatter' component={Scatter} />
-        <Route exact path='/doughnut' component={Doughnut} />
-        <Route exact path='/pie' component={Pie} />
-        <Route exact path='/polar' component={Polar} />
-        <Route exact path='/radar' component={Radar} />
-        <Route exact path='/dynamic-bar' component={Dynamic} />
-        <Route exact path='/multi' component={MultiType} />
-        <Route exact path='/crazy' component={Crazy} />
-        <Route exact path='/click-events' component={ClickEvents} />
+        
       </Switch>
     </div>
   </Router>
