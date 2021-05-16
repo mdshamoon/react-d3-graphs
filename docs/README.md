@@ -4,7 +4,7 @@
 
 ```bash
 
-# install react-chartjs-2 dependencies
+# install react-d3-graphs dependencies
 npm install
 
 # cd into the example, install example dependencies

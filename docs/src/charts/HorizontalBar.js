@@ -32,7 +32,7 @@ const HorizontalBarChart = () => {
 
   return (
     <>
-      <h1 className='title'>Horizontal Bar Chart</h1>
+      <h1 className='title'>Horizontal Bar chart</h1>
       <div className={styles.Header}>
         <BarChart
           width={400}
