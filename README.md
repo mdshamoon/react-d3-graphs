@@ -19,7 +19,7 @@ yarn add react-d3-graphs
 ```jsx
 import { Bar } from 'react-d3-graphs';
 
-<Bar widht={300} height={400} barColor="#fff" bgColor="#234f22" data={ [ {value: 10}, {value:20} ] } />
+<Bar width={300} height={400} barColor="#fff" bgColor="#234f22" data={ [ {value: 10}, {value:20} ] } />
 ```
 
 <img src="https://user-images.githubusercontent.com/32592458/118452602-f2298100-b713-11eb-9dfb-924cd499abc1.png" width="400px" height="400px">
